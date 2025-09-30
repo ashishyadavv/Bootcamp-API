@@ -1,0 +1,19 @@
+{
+  "name": "bootcamp-api",
+  "version": "1.0.0",
+  "description": "BootCamp Backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server"
+  },
+  "author": "Ashish Yadav",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
