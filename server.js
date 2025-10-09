@@ -8,6 +8,7 @@ const connectDB = require("./config/db");
 connectDB();
 
 const bootcamps = require("./routes/bootCamp");
+const courses = require("./routes/courses");
 
 //load env variables
 dotenv.config({ path: "./config/config.env" });
@@ -15,6 +16,8 @@ app.use(morgan("dev"));
 app.use(express.json());
 
 app.use("/api/v1/bootcamps", bootcamps);
+app.use("/api/v1/courses", courses);
+
 app.use(errorHandler);
 
 app.listen(process.env.PORT, () => {
